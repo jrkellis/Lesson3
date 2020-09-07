@@ -1,0 +1,157 @@
+/*
+COLOR SCHEME FROM COOLERS.CO
+--------------------------------
+CSS HEX
+  charcoal: #264653ff;
+  persian-green: #2a9d8fff;
+  orange-yellow-crayola: #e9c46aff;
+  sandy-brown: #f4a261ff;
+  burnt-sienna: #e76f51ff;
+
+CSS RGBA
+  charcoal: rgba(38, 70, 83, 1);
+  persian-green: rgba(42, 157, 143, 1);
+  orange-yellow-crayola: rgba(233, 196, 106, 1);
+  sandy-brown: rgba(244, 162, 97, 1);
+  burnt-sienna: rgba(231, 111, 81, 1);
+
+CSS HSL
+  charcoal: hsla(197, 37%, 24%, 1);
+  persian-green: hsla(173, 58%, 39%, 1);
+  orange-yellow-crayola: hsla(43, 74%, 66%, 1);
+  sandy-brown: hsla(27, 87%, 67%, 1);
+  burnt-sienna: hsla(12, 76%, 61%, 1);
+-------------------------------- */
+
+
+  /* Fonts --------------------- */
+  @font-face {
+    font-family: karlaRegular;
+    src: url(fonts/Karla/Karla-Regular.ttf);
+  }
+
+  @font-face {
+    font-family: karlaBold;
+    src: url(fonts/Karla/Karla-Bold.ttf);
+  }
+
+  @font-face {
+    font-family: karlaBoldItalic;
+    src: url(fonts/Karla/Karla-BoldItalic.ttf);
+  }
+
+  @font-face {
+    font-family: karlaItalic;
+    src: url(fonts/Karla/Karla-Italic.ttf);
+  }
+
+  @font-face {
+    font-family: sourceSerifPro-bold;
+    src: url(fonts/Source_Serif_Pro/SourceSerifPro-Bold.ttf);
+  }
+  /* --------------------------- */
+
+
+/* GLOBAL STYLES --------------- */
+* {
+  font-family: karlaRegular, sans-serif;
+  margin: 2%;
+}
+
+h2, h3 {
+  font-family: karlaBold, sans-serif;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 3rem;
+  color: #264653ff;
+}
+
+h3 {
+  font-size: 2rem;
+  color: #e76f51ff;
+}
+
+img {
+  width: 300px;
+}
+
+.mainSection {
+  margin: 50px 2%;
+  border-bottom: 1px solid #2a9d8fff;
+}
+
+
+
+
+
+/* ABOUT/PROFILE
+-------------------------------- */
+header {
+  padding: 2% 10%;
+  background-color: rgba(244, 162, 97, .25);
+}
+
+h1 {
+  font-family: sourceSerifPro-bold, serif;
+  font-style: bold, italic;
+  font-size: 4rem;
+  color: #2a9d8fff;
+}
+
+
+
+
+/* PROJECTS/PORTFOLIO
+-------------------------------- */
+.portfolio img {
+  width: 20%;
+  max-width: 200px;
+}
+
+.portfolioSection {
+  padding: 3%;
+}
+
+
+
+/* WORK EXPERIENCE
+-------------------------------- */
+.work {
+  padding: 3%;
+}
+
+
+
+/* EDUCATION/CERTIFICATIONS
+-------------------------------- */
+.education {
+  padding: 3%;
+}
+
+
+
+
+
+/* CONTACT/SOCIAL MEDIA (FOOTER)
+-------------------------------- */
+footer {
+  padding: 2% 10%;
+  background-color: rgba(244, 162, 97, .25);
+}
+
+footer h2 {
+  font-family: SourceSerifPro-bold, serif;
+  text-align: center;
+}
+
+footer ul li {
+  text-align: center;
+  display: inline;
+}
+
+footer ul {
+  margin-left: auto;
+  margin-right: auto;
+}
