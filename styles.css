@@ -53,35 +53,69 @@ CSS HSL
 
 
 /* GLOBAL STYLES --------------- */
-* {
-  font-family: karlaRegular, sans-serif;
-  margin: 2%;
+
+html {
+  box-sizing: border-box;
+}
+*:before, *:after {
+  box-sizing: inherit;
 }
 
-h2, h3 {
-  font-family: karlaBold, sans-serif;
-  font-weight: bold;
+* {
+  font-family: karlaRegular, sans-serif;
+  font-size: 1.1rem;
+  box-sizing: inherit;
+  /* width: 90%; */
+  /* margin: 5% auto; */
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
 h2 {
+  font-family: karlaBold, sans-serif;
+  font-weight: bold;
   font-size: 3rem;
   color: #264653ff;
+  /* width: 100%; */
+  text-align: center;
+  margin: 0;
 }
 
 h3 {
+  font-family: karlaBoldItalic, sans-serif;
+  font-weight: bold;
+  font-style: italic;
   font-size: 2rem;
   color: #e76f51ff;
+  /* margin-left: -10%; */
 }
 
-img {
-  width: 300px;
+/* No buttons currently on page
+
+.btn {
+  color: #e9c46aff;
+  background: #264653ff;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-left: 10px auto;
 }
 
-.mainSection {
-  margin: 50px 2%;
-  border-bottom: 1px solid #2a9d8fff;
+.btn:hover {
+  text-decoration: none;
+  background-color: rgba(38, 70, 83, 1, .5);
 }
+*/
 
+.content-wrap {
+  width: 80%;
+  margin: 0 auto;
+  padding: 60px 0;
+}
 
 
 
@@ -89,7 +123,6 @@ img {
 /* ABOUT/PROFILE
 -------------------------------- */
 header {
-  padding: 2% 10%;
   background-color: rgba(244, 162, 97, .25);
 }
 
@@ -97,7 +130,8 @@ h1 {
   font-family: sourceSerifPro-bold, serif;
   font-style: bold, italic;
   font-size: 4rem;
-  color: #2a9d8fff;
+  text-align: center;
+  color: #264653ff;
 }
 
 
@@ -105,39 +139,44 @@ h1 {
 
 /* PROJECTS/PORTFOLIO
 -------------------------------- */
-.portfolio img {
-  width: 20%;
-  max-width: 200px;
+
+.portfolioBlock {
+
 }
 
 .portfolioSection {
-  padding: 3%;
+  overflow: hidden;
 }
 
+img {
+  max-width: 30%;
+  padding: 25px 10px;
+  margin: auto;
+}
+
+.pictureGroup {
+  display: block;
+  width: 90%;
+}
 
 
 /* WORK EXPERIENCE
 -------------------------------- */
-.work {
-  padding: 3%;
-}
+.workBlock {
 
+}
 
 
 /* EDUCATION/CERTIFICATIONS
 -------------------------------- */
-.education {
-  padding: 3%;
+.educationBlock {
+
 }
-
-
-
 
 
 /* CONTACT/SOCIAL MEDIA (FOOTER)
 -------------------------------- */
 footer {
-  padding: 2% 10%;
   background-color: rgba(244, 162, 97, .25);
 }
 
@@ -148,10 +187,13 @@ footer h2 {
 
 footer ul li {
   text-align: center;
-  display: inline;
+  display: inline-block;
+  width: 100%;
+  margin: 10px auto;
 }
 
-footer ul {
-  margin-left: auto;
-  margin-right: auto;
+footer a {
+  font-family: karlaBold, sans-serif;
+  font-size: 1.2rem;
+  color: #264653ff;
 }
